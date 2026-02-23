@@ -1,0 +1,10 @@
+services:
+  nuxt-app:
+    build: .
+    ports:
+      - "4938:4938"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
